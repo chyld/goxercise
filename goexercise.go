@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	as "github.com/chyld/goxercise/arrayslice"
+	as "github.com/chyld/goxercise/arrayslicemap"
 	"github.com/chyld/goxercise/control"
 	"github.com/chyld/goxercise/primitives"
 )
@@ -20,4 +20,5 @@ func main() {
 	a, b := as.BasicArray()
 	fmt.Printf("BasicArray: %#v %#v\n", a, b)
 	as.BasicSlice()
+	as.BasicMap()
 }

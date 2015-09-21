@@ -1,4 +1,4 @@
-package arrayslice
+package arrayslicemap
 
 import (
 	"fmt"
@@ -22,5 +22,14 @@ func BasicSlice() {
 	var s2 = odds[1:]
 	var s3 = odds[2:]
 	var s4 = odds[:3]
-	fmt.Printf("%#v, %#v, %#v, %#v, %#v", odds, s1, s2, s3, s4)
+	fmt.Printf("%#v, %#v, %#v, %#v, %#v\n\n", odds, s1, s2, s3, s4)
+}
+
+// BasicMap todo
+func BasicMap() {
+	cities := map[string]int64{"fremont": 10}
+	cities[`sanjose`] = 20
+	towns := make(map[string]int, 10)
+
+	fmt.Printf("%#v --- %#v\n\n", cities, towns)
 }
